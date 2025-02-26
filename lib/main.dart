@@ -1,15 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:segundo_app/button_Page.dart';
-import 'package:segundo_app/card_page.dart';
-import 'package:segundo_app/column_page.dart';
-import 'package:segundo_app/container_page.dart';
-import 'package:segundo_app/form_field_page.dart';
-import 'package:segundo_app/home.dart';
-import 'package:segundo_app/imagem_page.dart';
-import 'package:segundo_app/login_page.dart';
-import 'package:segundo_app/row_page.dart';
-import 'package:segundo_app/text_page.dart';
-import 'package:segundo_app/tinder_page.dart';
+import 'package:tarefas_app/tarefas_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: TinderPage(),
+      home: TarefasPage(),
     );
   }
 }
@@ -72,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
